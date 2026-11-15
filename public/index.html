@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbf4ec" />
+  <meta name="description" content="Bloom in the City｜Flowers Make Every Moment Beautiful. 花藝、花束訂製、花藝課程與台北門市資訊。" />
+  <title>Bloom in the City｜花漾城市・花藝生活</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Noto+Sans+TC:wght@400;500;600;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bloom in the City 首頁">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 8c9 9 12 15 0 24C20 23 23 17 32 8Z"/><path d="M56 32c-9 9-15 12-24 0 9-12 15-9 24 0Z"/><path d="M32 56c-9-9-12-15 0-24 12 9 9 15 0 24Z"/><path d="M8 32c9-9 15-12 24 0-9 12-15 9-24 0Z"/><circle cx="32" cy="32" r="5"/><path d="M31 38c-3 9-8 15-16 18m17-18c3 7 8 12 14 15"/></svg></span>
+      <span class="brand-copy"><span class="brand-name">Bloom in the City</span><span class="brand-tag">Flowers Make Every Moment Beautiful.</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="開啟選單" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="主要導覽">
+      <a class="nav-home active" href="#home">首頁</a><a href="#categories">線上花店 <span class="chevron">⌄</span></a><a href="#products">客製花束</a><a href="#workshop">花藝課程</a><a href="#store">門市資訊</a><a href="#seasonal">花藝誌</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="搜尋"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="7.2"/><path d="m16.2 16.2 5 5"/></svg></button>
+      <button class="icon-button" aria-label="會員"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="9" r="3.2"/><path d="M5.8 20c.7-3.2 3-5.1 6.2-5.1s5.5 1.9 6.2 5.1"/></svg></button>
+      <button class="icon-button cart-icon" aria-label="購物車"><svg viewBox="0 0 24 24"><path d="M2.5 3.5h2.3L7 14.6a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/></svg><span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="花漾城市主視覺">
+      <div class="hero-photo" role="img" aria-label="粉色玫瑰花束與城市午後"></div>
+      <div class="hero-copy"><p class="hero-hand">讓每一天，<br/>都有一束花的理由。</p><span class="hero-swish" aria-hidden="true">⌁♡</span><p class="hero-english">Flowers Make Every Moment Beautiful.</p><a class="pill-button" href="#products">立即選購花禮 <span>⟶</span></a></div>
+      <div class="hero-location"><span class="pin">⌖</span><span>台北・台大旁<br/>城市花日子</span><i></i></div>
+      <button class="hero-arrow prev" aria-label="上一張">‹</button><button class="hero-arrow next" aria-label="下一張">›</button>
+      <div class="hero-dots" aria-label="輪播頁面"><button class="selected" aria-label="第 1 張"></button><button aria-label="第 2 張"></button><button aria-label="第 3 張"></button><button aria-label="第 4 張"></button></div>
+    </section>
+
+    <section id="categories" class="category-strip" aria-label="花藝服務分類">
+      <a class="category-card" href="#products"><img src="/images/category-bouquet.jpg" alt="粉色玫瑰花束"/><span>鮮花花束<em>Bouquets</em></span></a>
+      <a class="category-card" href="#products"><img src="/images/category-preserved.jpg" alt="永生花玻璃罩"/><span>永生花<em>Preserved</em></span></a>
+      <a class="category-card" href="#products"><img src="/images/category-plants.jpg" alt="盆栽綠植"/><span>盆栽綠植<em>Plants</em></span></a>
+      <a class="category-card" href="#products"><img src="/images/category-gifts.jpg" alt="花禮設計"/><span>花禮設計<em>Gift Sets</em></span></a>
+      <a class="category-card" href="#workshop"><img src="/images/category-workshop.jpg" alt="花藝體驗課程"/><span>花藝課程<em>Workshop</em></span></a>
+      <a class="category-card" id="seasonal" href="#products"><img src="/images/category-seasonal.jpg" alt="節日限定花卡"/><span>節日限定<em>Seasonal</em></span></a>
+    </section>
+
+    <section class="bouquet-builder" id="custom-bouquet">
+      <div class="builder-intro"><p class="script-title">Create Your Own Bouquet</p><h2>打造專屬於你的花束</h2><p class="builder-description">選擇花材、色系與包裝，<br/>讓我們為你實現心中的花束！</p><a class="outline-pill" href="#products">開始客製花束 <span>⟶</span></a><span class="builder-flower" aria-hidden="true">❀</span></div>
+      <div class="builder-steps">
+        <div class="builder-step"><b>1</b><span>選擇主花</span><img src="/images/custom-roses.jpg" alt="粉色主花玫瑰"/></div>
+        <div class="builder-step"><b>2</b><span>選擇配花</span><img src="/images/custom-filler.jpg" alt="白色滿天星"/></div>
+        <div class="builder-step"><b>3</b><span>選擇包裝</span><img src="/images/custom-wrap.jpg" alt="花束包裝紙"/></div>
+        <div class="builder-step"><b>4</b><span>加入卡片</span><img src="/images/custom-card.jpg" alt="祝福花卡"/></div>
+      </div>
+      <div class="builder-price"><span>預估價格</span><strong><small>NT$</small> 1,280<em> 起</em></strong><button class="pill-button add-cart" data-name="客製花束" data-price="1280">♧ 加入購物車 <span>⟶</span></button></div>
+    </section>
+
+    <section class="steps-section" aria-labelledby="steps-title">
+      <div class="section-heading compact"><i></i><h2 id="steps-title">輕鬆 5 步驟，讓美好更簡單</h2><i></i></div>
+      <div class="steps-row">
+        <div class="process-step"><div class="process-icon"><svg viewBox="0 0 48 48"><path d="M13 31H9a7 7 0 0 1 0-14 11 11 0 0 1 21-2 8 8 0 0 1 3 16h-4"/><path d="M24 38V23m-6 6 6-6 6 6"/></svg></div><strong>1. 上傳或選購</strong><span>選擇商品或上傳設計</span></div><b class="step-arrow">➜</b>
+        <div class="process-step"><div class="process-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="8"/><path d="m20 4 8 0 1.4 5.2 4 1.7 4.5-2.2 5.6 5.7-2.4 4.4 1.5 4.1 5.1 1.6v8l-5.1 1.5-1.6 4 2.2 4.5-5.7 5.6-4.4-2.4-4.1 1.5L27 47h-8l-1.5-5.1-4-1.6L9 42.5l-5.6-5.7 2.4-4.4-1.5-4.1L-.8 26.7v-8l5.1-1.5 1.6-4L3.7 8.7l5.7-5.6 4.4 2.4 4.1-1.5Z" transform="translate(5 2) scale(.8)"/></svg></div><strong>2. 喜愛設定</strong><span>選擇視覺與花色方式</span></div><b class="step-arrow">➜</b>
+        <div class="process-step"><div class="process-icon"><svg viewBox="0 0 48 48"><rect x="5" y="9" width="38" height="30" rx="4"/><path d="M5 17h38M12 30h10m-10 4h16"/></svg></div><strong>3. 線上付款</strong><span>支援多元支付</span></div><b class="step-arrow">➜</b>
+        <div class="process-step"><div class="process-icon"><svg viewBox="0 0 48 48"><path d="M3 11h25v25H3zM28 19h10l7 9v8H28z"/><circle cx="13" cy="38" r="4"/><circle cx="37" cy="38" r="4"/><path d="M34 22v7h9"/></svg></div><strong>4. 快速出貨</strong><span>專業配送服務</span></div><b class="step-arrow">➜</b>
+        <div class="process-step"><div class="process-icon"><svg viewBox="0 0 48 48"><path d="M24 41 7 24C-3 11 13 2 24 14 35 2 51 11 41 24Z"/></svg></div><strong>5. 收到幸福</strong><span>傳遞美好心意</span></div>
+      </div>
+    </section>
+
+    <section class="bestsellers" id="products">
+      <div class="section-heading"><i></i><h2>精選花禮 <em>• Best Sellers</em></h2><i></i><a href="#products">查看更多 <span>⟶</span></a></div>
+      <div class="product-grid">
+        <article class="product-card"><img src="/images/product-roses.jpg" alt="浪漫粉玫瑰花束"/><div class="product-info"><h3>浪漫粉玫瑰花束</h3><p>NT$1,280</p></div><button class="mini-cart add-cart" aria-label="加入浪漫粉玫瑰花束購物車" data-name="浪漫粉玫瑰花束" data-price="1280">♧</button></article>
+        <article class="product-card"><img src="/images/product-sunflowers.jpg" alt="陽光向日葵花束"/><div class="product-info"><h3>陽光向日葵花束</h3><p>NT$980</p></div><button class="mini-cart add-cart" aria-label="加入陽光向日葵花束購物車" data-name="陽光向日葵花束" data-price="980">♧</button></article>
+        <article class="product-card"><img src="/images/product-hydrangea.jpg" alt="夢幻藍紫花束"/><div class="product-info"><h3>夢幻藍紫花束</h3><p>NT$1,580</p></div><button class="mini-cart add-cart" aria-label="加入夢幻藍紫花束購物車" data-name="夢幻藍紫花束" data-price="1580">♧</button></article>
+        <article class="product-card"><img src="/images/product-preserved.jpg" alt="永生花浪漫之約"/><div class="product-info"><h3>永生花浪漫之約</h3><p>NT$2,280</p></div><button class="mini-cart add-cart" aria-label="加入永生花浪漫之約購物車" data-name="永生花浪漫之約" data-price="2280">♧</button></article>
+        <article class="product-card"><img src="/images/product-plant.jpg" alt="療癒系多肉盆栽"/><div class="product-info"><h3>療癒系多肉盆栽</h3><p>NT$680</p></div><button class="mini-cart add-cart" aria-label="加入療癒系多肉盆栽購物車" data-name="療癒系多肉盆栽" data-price="680">♧</button></article>
+      </div>
+    </section>
+
+    <section class="story-grid" aria-label="更多花藝資訊">
+      <article class="story-card workshop-card" id="workshop"><img src="/images/workshop-hands.jpg" alt="花藝師親手整理鮮花"/><div class="story-content"><h2>花藝體驗課程</h2><strong>與我們一起，創造花的美好</strong><ul><li>週末花藝課程</li><li>情侶花藝體驗</li><li>團體包班預約</li></ul><a class="outline-pill" href="#workshop">了解更多 <span>⟶</span></a></div></article>
+      <article class="story-card store-card" id="store"><div class="story-content"><h2>門市資訊</h2><strong>台北・台大生活圈</strong><p>⌖　台北市大安區羅斯福路四段 XXX 號</p><p>◷　營業時間：10:00 – 20:00</p><a class="outline-pill" href="#store">查看地圖 <span>⟶</span></a></div><img src="/images/storefront.jpg" alt="Bloom in the City 台北花店門市"/></article>
+      <article class="story-card testimonial-card"><div class="testimonial-inner"><h2>顧客真實好評</h2><p class="quote-mark">“</p><blockquote>「花束超美，配送也很準時，<br/>收到的人都很開心！」</blockquote><cite>— Angela</cite><div class="review-dots"><i class="on"></i><i></i><i></i></div></div><img class="avatar" src="/images/customer-avatar.jpg" alt="顧客 Angela"/></article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M32 8c9 9 12 15 0 24C20 23 23 17 32 8Z"/><path d="M56 32c-9 9-15 12-24 0 9-12 15-9 24 0Z"/><path d="M32 56c-9-9-12-15 0-24 12 9 9 15 0 24Z"/><path d="M8 32c9-9 15-12 24 0-9 12-15 9-24 0Z"/><circle cx="32" cy="32" r="5"/></svg></span><span class="brand-copy"><span class="brand-name">Bloom in the City</span><span class="brand-tag">Flowers Make Every Moment Beautiful.</span></span></a>
+      <nav class="footer-links" aria-label="頁尾連結"><a href="#store">關於我們</a><a href="#products">購物須知</a><a href="#store">送貨服務</a><a href="#workshop">常見問題</a><a href="#store">聯絡我們</a><div class="social-links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="LINE">ᴸᴵᴺᴱ</a><a href="#" aria-label="YouTube">▶</a></div></nav>
+      <form class="newsletter"><label for="email">訂閱電子報</label><span>獲得最新花禮優惠</span><div><input id="email" type="email" placeholder="輸入您的 Email" required/><button type="submit">訂閱</button></div><small class="newsletter-message" aria-live="polite"></small></form>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Bloom in the City. All Rights Reserved.</span><span>⌖ 台北市大安區羅斯福路四段 XXX 號　|　☎ 02-2365-1234</span></div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
